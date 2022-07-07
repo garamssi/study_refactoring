@@ -10,10 +10,12 @@ public class ProductionPlan {
 
     public void applyAdjustment(double adjustment) {
         this.adjustments.add(adjustment);
-        this.production += adjustment;
     }
 
     public double getProduction() {
-        return this.production;
+        //        return this.adjustments.stream().reduce((double) 0, Double::sum);
+        return this.adjustments.stream().mapToDouble(Double::valueOf).sum();
+
     }
+
 }

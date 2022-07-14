@@ -4,6 +4,10 @@ import java.time.LocalDateTime;
 
 public class Reservation {
 
+    /**
+     * intellij editor hint를 통해서 usage를 확인한 후 제거한다.
+     * */
+
     private String title;
 
     private LocalDateTime from;

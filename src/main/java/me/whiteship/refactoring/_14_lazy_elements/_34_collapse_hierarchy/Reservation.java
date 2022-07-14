@@ -15,4 +15,8 @@ public class Reservation {
 
     private boolean paid;
 
+    /**
+     * refactor -> push members down 을 사용하면 하위 클래스에 함수나 필드를 옮길 수 있다.
+     * */
+
 }

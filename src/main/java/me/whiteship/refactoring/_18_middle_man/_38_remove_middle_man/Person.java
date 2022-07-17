@@ -14,4 +14,8 @@ public class Person {
     public Person getManager() {
         return this.department.getManager();
     }
+
+    public Person getDepartment() {
+        return this.department.getManager();
+    }
 }

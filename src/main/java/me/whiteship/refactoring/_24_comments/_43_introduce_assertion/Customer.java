@@ -13,6 +13,10 @@ public class Customer {
     }
 
     public void setDiscountRate(Double discountRate) {
+        // assert 문법을 그냥 사용하기보다는 if문으로 체크하자
+        if(discountRate != null && discountRate > 0 ) {
+            throw new IllegalArgumentException(discountRate + " can't be minus.");
+        }
         this.discountRate = discountRate;
     }
 }
